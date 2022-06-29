@@ -1,0 +1,24 @@
+/* Font */
+html,body{
+     height: 100%;
+ }
+.container-fluid{
+     min-height: 100%;
+ }
+
+ /* services icon color */
+.i-colo{
+    color: rgb(29, 166, 45);
+ }
+.nav-link{
+    color: whitesmoke;
+}
+.nav-link:hover{
+    color: black;
+    background-color: rgb(183, 146, 100);
+}
+.nav-link.active{
+    color: black;
+    background-color: rgb(177, 104, 15);
+    font-weight: bold;
+}
