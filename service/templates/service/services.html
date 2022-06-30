@@ -3,59 +3,14 @@
 <div class="mt-5">
     <h1 class="text-warning mb-5 border-bottom">SERVICES</h1>
     <div class="row text-center text-white mb-5">
+        {% for service in  context %}
         <div class="col-sm-4">
-        <i class="fas fa-search-plus fa-2x mb-3 i-colo"></i>
-        <h3>Seo</h3>
-        <p>Lorem ipsum dolor sit amet<br> consecteturelit!</p>
+            <i class="{{service.icon}} fa-2x mb-3 i-colo"></i>
+            <h3>{{service.heading}}</h3>
+            <p>{{service.discription}}</p>
+        </div>
+          
+        {% endfor %}
     </div>
-    <div class="col-sm-4">
-        <i class="fad fa-laptop-code fa-2x mb-3 i-colo"></i>
-        <h3>Web Desgin</h3>
-        <p>Lorem ipsum dolor sit amet<br> consecteturelit!</p>
-    </div>
-    <div class="col-sm-4">
-        <i class="fas fa-code fa-2x mb-3 i-colo"></i>
-        <h3>Web Development</h3>
-        <p>Lorem ipsum dolor sit amet<br> consecteturelit!</p>
-    </div>
-    
-</div>
-<div class="row text-center text-white mb-5">
-    <div class="col-sm-4">
-        <i class="fab fa-android fa-2x mb-3 i-colo"></i>
-
-    <h3>Android</h3>
-    <p>Lorem ipsum dolor sit amet<br> consecteturelit!</p>
-</div>
-<div class="col-sm-4">
-    <i class="fab fa-app-store-ios fa-2x mb-3 i-colo"></i>
-    <h3>IOS</h3>
-    <p>Lorem ipsum dolor sit amet<br> consecteturelit!</p>
-</div>
-<div class="col-sm-4">
-    <i class="fas fa-paint-brush fa-2x mb-3 i-colo"></i>
-    <h3>logo desgin</h3>
-    <p>Lorem ipsum dolor sit amet<br> consecteturelit!</p>
-</div>
-
-</div>
-<div class="row text-center text-white mb-5">
-    <div class="col-sm-4">
-    <i class="fab fa-ioxhost fa-2x mb-3 i-colo"></i>
-    <h3>Hosting</h3>
-    <p>Lorem ipsum dolor sit amet<br> consecteturelit!</p>
-</div>
-<div class="col-sm-4">
-    <i class="fas fa-phone-alt fa-2x mb-3 i-colo"></i>
-    <h3>Support</h3>
-    <p>Lorem ipsum dolor sit amet<br> consecteturelit!</p>
-</div>
-<div class="col-sm-4">
-    <i class="fas fa-ad fa-2x mb-3 i-colo"></i>
-    <h3>Advertisingt</h3>
-    <p>Lorem ipsum dolor sit amet<br> consecteturelit!</p>
-</div>
-
-</div>
 </div>
 {% endblock content %}
