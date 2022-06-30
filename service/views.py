@@ -1,6 +1,9 @@
 from django.shortcuts import render
-
+from .models import Service
 # Create your views here.
 def services(request):
-    context={'services': 'active'}
-    return render (request, 'service/services.html', context)
+    
+    context = Service.objects.all()
+    
+    return render (request, 'service/services.html', {'context':context})
+    
